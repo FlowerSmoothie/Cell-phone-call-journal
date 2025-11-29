@@ -1,0 +1,23 @@
+﻿  Abonents.cpp
+D:\Boogor\ТРПО\TRPO_kursovaya\TRPO_kursovaya\Abonents.cpp(54,20): warning C4018: '<': signed/unsigned mismatch
+D:\Boogor\ТРПО\TRPO_kursovaya\TRPO_kursovaya\Abonents.cpp(350,20): warning C4018: '<': signed/unsigned mismatch
+  Admin.cpp
+  Hash.cpp
+D:\Boogor\ТРПО\TRPO_kursovaya\TRPO_kursovaya\Hash.cpp(19,16): warning C4018: '<': signed/unsigned mismatch
+D:\Boogor\ТРПО\TRPO_kursovaya\TRPO_kursovaya\Hash.cpp(43,65): warning C4018: '<': signed/unsigned mismatch
+  Main.cpp
+  Registration.cpp
+D:\Boogor\ТРПО\TRPO_kursovaya\TRPO_kursovaya\Registration.cpp(15,13): error C2955: 'std::hash': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits(2250): message : see declaration of 'std::hash'
+D:\Boogor\ТРПО\TRPO_kursovaya\TRPO_kursovaya\Registration.cpp(52,16): error C2955: 'std::hash': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits(2250): message : see declaration of 'std::hash'
+D:\Boogor\ТРПО\TRPO_kursovaya\TRPO_kursovaya\Registration.cpp(54,30): error C2955: 'std::hash': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits(2250): message : see declaration of 'std::hash'
+D:\Boogor\ТРПО\TRPO_kursovaya\TRPO_kursovaya\Registration.cpp(54,52): error C2955: 'std::hash': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits(2250): message : see declaration of 'std::hash'
+D:\Boogor\ТРПО\TRPO_kursovaya\TRPO_kursovaya\Registration.cpp(69,29): error C2955: 'std::hash': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits(2250): message : see declaration of 'std::hash'
+D:\Boogor\ТРПО\TRPO_kursovaya\TRPO_kursovaya\Registration.cpp(69,51): error C2955: 'std::hash': use of class template requires template argument list
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits(2250): message : see declaration of 'std::hash'
+  User.cpp
+  Generating Code...
