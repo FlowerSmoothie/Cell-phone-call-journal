@@ -1,0 +1,42 @@
+﻿  Admin.cpp
+  Decor.cpp
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Admin.cpp(29,20): warning C4018: '<': signed/unsigned mismatch
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Admin.cpp(71,20): warning C4018: '<': signed/unsigned mismatch
+  Hash.cpp
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Hash.cpp(9,13): warning C4018: '<': signed/unsigned mismatch
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Hash.cpp(50,59): warning C4018: '<': signed/unsigned mismatch
+  LoginRegister.cpp
+  Main.cpp
+  Talk.cpp
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(126,10): warning C4566: character represented by universal-character-name '\u0412' cannot be represented in the current code page (1252)
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(126,10): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(126,10): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(126,10): warning C4566: character represented by universal-character-name '\u0434' cannot be represented in the current code page (1252)
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(126,10): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(126,10): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(126,10): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(126,10): warning C4566: character represented by universal-character-name '\u0440' cannot be represented in the current code page (1252)
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(126,10): warning C4566: character represented by universal-character-name '\u0444' cannot be represented in the current code page (1252)
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(126,10): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(126,10): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(126,10): warning C4566: character represented by universal-character-name '\u0439' cannot be represented in the current code page (1252)
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(126,10): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(126,10): warning C4566: character represented by universal-character-name '\u0443' cannot be represented in the current code page (1252)
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(126,10): warning C4566: character represented by universal-character-name '\u044B' cannot be represented in the current code page (1252)
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(126,10): warning C4566: character represented by universal-character-name '\u0437' cannot be represented in the current code page (1252)
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(126,10): warning C4566: character represented by universal-character-name '\u0433' cannot be represented in the current code page (1252)
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(170,20): warning C4018: '<': signed/unsigned mismatch
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(212,20): warning C4018: '<': signed/unsigned mismatch
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(297,20): warning C4018: '<': signed/unsigned mismatch
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(335,32): warning C4018: '<': signed/unsigned mismatch
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(344,32): warning C4018: '<': signed/unsigned mismatch
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(353,32): warning C4018: '<': signed/unsigned mismatch
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(362,32): warning C4018: '<': signed/unsigned mismatch
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(372,32): warning C4018: '<': signed/unsigned mismatch
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(381,32): warning C4018: '<': signed/unsigned mismatch
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(390,32): warning C4018: '<': signed/unsigned mismatch
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(400,32): warning C4018: '<': signed/unsigned mismatch
+D:\Personal\For Spain\For resume\AAAAAAA\AAAAAAA\Talk.cpp(544,20): warning C4018: '<': signed/unsigned mismatch
+  User.cpp
+  Generating Code...
+  AAAAAAA.vcxproj -> D:\Personal\For Spain\For resume\AAAAAAA\Debug\AAAAAAA.exe
