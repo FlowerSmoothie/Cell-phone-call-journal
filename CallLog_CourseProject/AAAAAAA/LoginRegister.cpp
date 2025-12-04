@@ -1,4 +1,4 @@
-﻿#include "Constants.h"
+#include "Constants.h"
 #include "Decor.h"
 #include "Hash.h"
 #include "LoginRegister.h"
@@ -91,13 +91,13 @@ bool createAccount(string login, string password, int role) {
 	}
 	file.close();
 	if (exist == 1) {
-		cout << "The login is already in use!\n";
+		printf_s("The login is already in use!\n");
 		return false;
 	}
 	ofstream fileWrite;
 	fileWrite.open(USER_DATA_FILE, ofstream::app);
 	if (!fileWrite.is_open()) {
-		cout << "Unable to register.\n";
+		printf_s("Unable to register.\n");
 		return false;
 	}
 	fileWrite << login << endl;
@@ -115,15 +115,15 @@ void PrintRegistrationForm(int role) {
 	while (1) {
 		system("cls");
 		PrintHeader("New account registration", 13);
-		cout << "Enter login: ";
+		printf_s("Enter login: ");
 		login = EnterLogin();
-		cout << "\nEnter password: ";
+		printf_s("\nEnter password: ");
 		password = EnterPassword();
-		cout << "\nRepeat password: ";
+		printf_s("\nRepeat password: ");
 		checkPassword = EnterPassword();
 		Separator();
 		if (doPasswrodsMatch(password, checkPassword)) {
-			cout << "Creating an account...";
+			printf_s("Creating an account...");
 			Separator();
 			if (createAccount(login, password, role)) {
 				cout << "Account created! " << ENTER_ANY_CHARACTER << '\n';
@@ -150,17 +150,17 @@ int PrintLogInForm() {
 	while (1) {
 		system("cls");
 		PrintHeader("Enter into account", 13);
-		cout << "Enter login: ";
+		printf_s("Enter login: ");
 		login = EnterLogin();
-		cout << "\nEnter password: ";
+		printf_s("\nEnter password: ");
 		password = EnterPassword();
 		Separator();
-		cout << "\nTrying to log in...\n";
+		printf_s("\nTrying to log in...\n");
 		Separator();
 		ifstream file;
 		file.open(USER_DATA_FILE);
 		if (!file.is_open()) {
-			cout << "Unable to log in.\n";
+			printf_s("Unable to log in.\n");
 			system("pause");
 			return -1;
 		}
@@ -181,7 +181,7 @@ int PrintLogInForm() {
 			}
 		}
 		if (found == 0) {
-			cout << "Check entered login and password.\n Press 1 to continue or other key to exit.\n";
+			printf_s("Check entered login and password.\n Press 1 to continue or other key to exit.\n");
 			choice = _getch();
 			if (choice == '1')
 				continue;
@@ -195,11 +195,11 @@ int PrintLogInForm() {
 			return role;
 			break;
 		case 0:
-			cout << "Unable to log in! The account was not confirmed by administrator.\n";
+			printf_s("Unable to log in! The account was not confirmed by administrator.\n");
 			system("pause");
 			return -1;
 		case 2:
-			cout << "Unable to log in! The account was blocked by administrator.\n";
+			printf_s("Unable to log in! The account was blocked by administrator.\n");
 			system("pause");
 			return -1;
 		}
