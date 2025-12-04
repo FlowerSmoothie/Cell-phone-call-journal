@@ -9,12 +9,12 @@ using namespace std;
 
 void Separator()
 {
-	cout << "\n-----------------------------------\n";
+	printf("\n-----------------------------------\n");
 }
 
 void LittleSeparator()
 {
-	cout << "\n-----\n";
+	printf("\n-----\n");
 }
 
 
@@ -28,10 +28,10 @@ void ChangeColor(int color)
 void PrintHeader(string str, int color)
 {
 	ChangeColor(color);
-	cout << "---------";
+	printf("---------");
 	cout << " " << str << " ";
-	cout << "---------";
-	cout << "\n";
+	printf("---------");
+	printf("\n");
 	ChangeColor(15);
 }
 
@@ -44,8 +44,8 @@ void DeleteSymbol()
 
 void SwitchWrongInput()
 {
-	cout << WRONG_INPUT << ' ' << ENTER_ANY_CHARACTER;
-	cout << '\n';
+	printf("%s %s", WRONG_INPUT, ENTER_ANY_CHARACTER);
+	printf("\n");
 	system("pause");
 	system("cls");
 }
@@ -106,7 +106,7 @@ int NumberInputCheck(int index, int size)
 {
 	if (index > size && index < 1)
 	{
-		std::cout << WRONG_INPUT << endl;
+		cout << WRONG_INPUT << endl;
 		std::system("pause");
 		return 0;
 	}
