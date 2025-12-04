@@ -1,4 +1,4 @@
-﻿#include "Constants.h"
+#include "Constants.h"
 #include "Decor.h"
 #include "Talk.h"
 #include <conio.h>
@@ -66,20 +66,20 @@ vector<TalkStruct> ReadTalksFromFile() {
 
 string SetNumber() {
 	string str;
-	cout << "Enter the subscriber's number: ";
+	printf_s("Enter the subscriber's number: ");
 	str = EnterNumberInString();
 	return str;
 }
 
 string SetFio() {
 	string str;
-	cout << "Enter the abonent's name: ";
+	printf_s("Enter the abonent's name: ");
 	cin >> str;
 	return str;
 }
 
 int SetBelonging() {
-	cout << "The call was incoming (1) or outgoing (0): ";
+	printf_s("The call was incoming (1) or outgoing (0): ");
 	char belonging = '2';
 	while (1) {
 		belonging = _getch();
@@ -93,12 +93,12 @@ int SetBelonging() {
 string SetOtherNumber(int belonging) {
 	string str;
 	if (belonging == '1')
-		cout << "Enter the number that called: ";
+		printf_s("Enter the number that called: ");
 	else {
 		if (belonging == '0')
-			cout << "Enter the number that is called: ";
+			printf_s("Enter the number that is called: ");
 		else
-			cout << "Enter the other number: ";
+				printf_s("Enter the other number: ");
 	}
 	cin >> str;
 	return str;
@@ -106,28 +106,28 @@ string SetOtherNumber(int belonging) {
 
 string SetDate() {
 	string str;
-	cout << "Enter date of the call (yyyy.mm.dd): ";
+	printf_s("Enter date of the call (yyyy.mm.dd): ");
 	cin >> str;
 	return str;
 }
 
 string SetTime() {
 	string str;
-	cout << "Enter time of call (ex. 23.16): ";
+	printf_s("Enter time of call (ex. 23.16): ");
 	cin >> str;
 	return str;
 }
 
 int SetDuration() {
 	int duration;
-	cout << "Enter length of the call in seconds: ";
+	printf_s("Enter length of the call in seconds: ");
 	duration = EnterNumber();
 	return duration;
 }
 
 double SetTarif() {
 	double tarif;
-	cout << "Set tariff for one minute of calling: ";
+	printf_s("Set tariff for one minute of calling: ");
 	//tarif = enterDouble();
 	cin >> tarif;
 	return tarif;
@@ -138,15 +138,15 @@ void AddTalk() {
 	system("cls");
 	TalkStruct talk;
 	talk.number = SetNumber();
-	cout << endl;
+	printf_s("\n");
 	talk.fio = SetFio();
 	talk.belonging = SetBelonging();
-	cout << endl;
+	printf_s("\n");
 	talk.otherNumber = SetOtherNumber(talk.belonging);
 	talk.date = SetDate();
 	talk.time = SetTime();
 	talk.duration = SetDuration();
-	cout << endl;
+	printf_s("\n");
 	talk.tarif = SetTarif();
 	WriteTalkToFile(talk);
 	std::system("pause");
@@ -158,16 +158,16 @@ void DeleteTalk() {
 	int s = arr.size();
 	int index = 0;
 	char check;
-	cout << "Enter the number of a log that you would like to delete: ";
+	printf_s("Enter the number of a log that you would like to delete: ");
 	index = EnterNumber();
 	if (NumberInputCheck(index, s) == 0)
 		return;
 	ChangeColor(12);
-	cout << "\nConfirm deletion: press 1 to continue, or any other key to cancel. ";
+	printf_s("\nConfirm deletion: press 1 to continue, or any other key to cancel. ");
 	ChangeColor(15);
 	check = _getch();
 	if (check != '1') {
-		cout << ENTER_ANY_CHARACTER << endl;
+		cout << ENTER_ANY_CHARACTER;
 		std::system("pause");
 		return;
 	}
@@ -175,7 +175,7 @@ void DeleteTalk() {
 	DeleteAllFromFile();
 	for (int j = 0; j < arr.size(); j++)
 		WriteTalkToFile(arr[j]);
-	cout << "Deleted successfully.\n";
+	printf_s("Deleted successfully.\n");
 	std::system("pause");
 	system("cls");
 }
@@ -186,14 +186,14 @@ void EditTalk() {
 	TalkStruct talk;
 	string tmp;
 	int index;
-	cout << "Enter the number of a log that you would like to edit: ";
+	printf_s("Enter the number of a log that you would like to edit: ");
 	index = EnterNumber();
 	if (NumberInputCheck(index, s) == 0)
 		return;
 	char choice;
 	index--;
-	cout << "\nWhat do you want to edit? ";
-	cout << "\n 1 - Subscriber's name\n 2 - Phone number\n 3 - Is it an incoming/outgoing call\n 4 - Another number\n 5 - Date\n 6 - Time\n 7 - Call duration\n 8 - Tariff\n ";
+	printf_s("\nWhat do you want to edit? ");
+	printf_s("\n 1 - Subscriber's name\n 2 - Phone number\n 3 - Is it an incoming/outgoing call\n 4 - Another number\n 5 - Date\n 6 - Time\n 7 - Call duration\n 8 - Tariff\n ");
 	choice = _getch();
 	switch (choice) {
 	case '1':
@@ -218,7 +218,7 @@ void EditTalk() {
 	DeleteAllFromFile();
 	for (int j = 0; j < arr.size(); j++)
 		WriteTalkToFile(arr[j]);
-	cout << "\nEdited successfully!\n" << endl;
+	printf_s("\nEdited successfully!\n\n");
 	system("pause");
 	system("cls");
 }
@@ -271,10 +271,10 @@ void SearchTalk() {
 	vector<TalkStruct> arr = ReadTalksFromFile();
 	while (cycle) {
 		system("cls");
-		cout << "What fields to fill for search?\n Field values right now (NULL - empty field. It can be left if it does not matter in search): \n";
+		printf_s("What fields to fill for search?\n Field values right now (NULL - empty field. It can be left if it does not matter in search): \n");
 		WriteInfoAboutTalk(talk, 1);
 		LittleSeparator();
-		cout << "\n 1 - Subscriber's name\n 2 - Phone number\n 3 - Is it an incoming/outgoing call\n 4 - Another number\n 5 - Date\n 6 - Time\n 7 - Call duration\n 8 - Tariff\n 9 - Clear all fields\n 0 - Next\n";
+		printf_s("\n 1 - Subscriber's name\n 2 - Phone number\n 3 - Is it an incoming/outgoing call\n 4 - Another number\n 5 - Date\n 6 - Time\n 7 - Call duration\n 8 - Tariff\n 9 - Clear all fields\n 0 - Next\n");
 		choice = _getch();
 		switch (choice) {
 		case '0':
@@ -321,7 +321,7 @@ void SearchTalk() {
 
 	}
 	if (found == 0)
-		cout << "\n No logs meet entered parameters!\n";
+		printf_s("\n No logs meet entered parameters!\n");
 	system("pause");
 	system("cls");
 }
@@ -333,8 +333,8 @@ void FilterTalk() {
 	double tarif = 0;
 	string str;
 	vector<TalkStruct> arr = ReadTalksFromFile();
-	cout << "Filter by which feature?";
-	cout << "\n 1 - Subscriber's name\n 2 - Phone number\n 3 - Is it an incoming/outgoing call\n 4 - Another number\n 5 - Date\n 6 - Time\n 7 - Call duration\n 8 - Tariff\n 0 - Next\n";
+	printf_s("Filter by which feature?");
+	printf_s("\n 1 - Subscriber's name\n 2 - Phone number\n 3 - Is it an incoming/outgoing call\n 4 - Another number\n 5 - Date\n 6 - Time\n 7 - Call duration\n 8 - Tariff\n 0 - Next\n");
 	choice = _getch();
 	Separator();
 	switch (choice) {
@@ -420,7 +420,7 @@ void FilterTalk() {
 		return;
 	}
 	if (found == 0)
-		cout << "\n No logs meet entered parameters!\n";
+		printf_s("\n No logs meet entered parameters!\n");
 	system("pause");
 	system("cls");
 }
@@ -428,8 +428,8 @@ void FilterTalk() {
 void SortTalk() {
 	char choice;
 	vector<TalkStruct> arr = ReadTalksFromFile();
-	cout << "Sort by which feature?";
-	cout << "\n 1 - Subscriber's name\n 2 - Phone number\n 3 - Another number\n 4 - Date\n 5 - Call duration\n 0 - Next\n";
+	printf_s("Sort by which feature?");
+	printf_s("\n 1 - Subscriber's name\n 2 - Phone number\n 3 - Another number\n 4 - Date\n 5 - Call duration\n 0 - Next\n");
 	choice = _getch();
 	Separator();
 	system("cls");
@@ -519,15 +519,15 @@ void Task() {
 	vector<TalkStruct> arr;
 	int foundDate = 0;
 	string FIO;
-	cout << "Enter the name of an abonent for which you need to see a list of calls and sum for outgoing calls for some period: ";
+	printf_s("Enter the name of an abonent for which you need to see a list of calls and sum for outgoing calls for some period: ");
 	cin >> FIO;
 	string date1, date2;
-	cout << "Enter lower range of search (yyyy.mm.dd): ";
+	printf_s("Enter lower range of search (yyyy.mm.dd): ");
 	cin >> date1;
-	cout << "Enter higher range of search (yyyy.mm.dd): ";
+	printf_s("Enter higher range of search (yyyy.mm.dd): ");
 	cin >> date2;
 	if (date1 > date2) {
-		cout << "Wrong input!\n";
+		printf_s("Wrong input!\n");
 		system("pause");
 		return;
 	}
@@ -548,7 +548,7 @@ void Task() {
 	}
 	readFile.close();
 	if (arr.size() == 0) {
-		cout << "No information for such subscriber!\n";
+		printf_s("No information for such subscriber!\n");
 		system("pause");
 		return;
 	}
@@ -561,7 +561,7 @@ void Task() {
 			LittleSeparator();
 		}
 	}
-	cout << "Sum in total: " << sum << endl;
+	printf_s("Sum in total: %f", sum);
 	system("pause");
 	system("cls");
 	return;
