@@ -4,7 +4,7 @@ The application is a system for recording phone calls, similar to those that sli
 - possibility of authorization under different roles (normal user and administrator);
 - ability to manage users' accounts via the administrator account (basic login and password for admin - admin);
 - viewing and editing information about phone calls (adding data, editing, deleting, searching and filtering);
-    additional: output of certain parameters for each subscriber in the required time period (list of incoming and outgoing calls, total time of incoming calls, total time of outgoing calls, total sum of outgoing calls) (marked as "individual task").
+    - additional: output of certain parameters for each subscriber in the required time period (list of incoming and outgoing calls, total time of incoming calls, total time of outgoing calls, total sum of outgoing calls) (marked as "individual task").
    
 
 The software is developed in C programming language with elements of C++ as a console application. The programming paradigm for this project is procedural.
