@@ -16,7 +16,7 @@ int main() {
 	while (1) {
 		system("cls");
 		PrintHeader("Phone call log program", 13);
-		cout << "\n 1 - log in \n 2 - sign in\n 3 - exit program\n";
+		printf_s("\n 1 - log in \n 2 - sign in\n 3 - exit program\n");
 		choice = _getch();
 		switch (choice) {
 		case '1':
