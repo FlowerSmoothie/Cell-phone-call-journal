@@ -13,7 +13,7 @@ void UserMenu()
 	{
 		system("cls");
 		PrintHeader("Menu", 13);
-		cout << "1 - Show data about calls\n 2 - Filter calls\n 3 - Sort calls\n 4 - Individual task\n 5 - Search calls\n 6 - Exit\n ";
+		printf("1 - Show data about calls\n 2 - Filter calls\n 3 - Sort calls\n 4 - Individual task\n 5 - Search calls\n 6 - Exit\n ");
 		choice = _getch();
 		system("cls");
 		switch (choice)
@@ -34,7 +34,7 @@ void UserMenu()
 			SearchTalk();
 			break;
 		case '6':
-			cout << "Press 1 to exit or other key to stay: ";
+			printf("Press 1 to exit or other key to stay: ");
 			choice = _getch();
 			if (choice == '1')
 				return;
