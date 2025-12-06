@@ -5,6 +5,7 @@ The application is a system for managing data about phone calls, similar to thos
 - ability to manage users' accounts via administrator account (basic login and password for an admin account: admin - admin);
 - viewing and editing information about phone calls (adding data, editing, deleting, searching and filtering);
     - additional: output of certain parameters for each subscriber in the required time period (list of incoming and outgoing calls, total time of incoming calls, total time of outgoing calls, total sum of outgoing calls) (marked as "___individual task___").
+- storing passwords with hashing using the SHA-256 algorithm;
    
 
 The software is developed in C programming language with elements of C++ as a console application. The programming paradigm for this project is procedural.
