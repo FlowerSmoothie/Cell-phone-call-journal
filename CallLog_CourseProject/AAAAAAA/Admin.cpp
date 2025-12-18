@@ -66,6 +66,7 @@ void ViewUsers(vector<UserStruct> arr) {
 void ViewUsers() {
 	vector<UserStruct> arr;
 	arr = ReadUsersFromFile();
+	system("cls");
 	ViewUsers(arr);
 	printf_s("\n");
 	system("pause");
@@ -207,7 +208,7 @@ void AdminMenu() {
 			case '4':
 				DeleteTalk(); break;
 			case '5':
-				SearchTalk(); break;
+				FilterTalk(); break;
 			case '6':
 				SortTalk(); break;
 			case '7':
