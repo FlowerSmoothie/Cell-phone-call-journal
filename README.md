@@ -16,6 +16,8 @@ Algorithms of function operation have been developed, such as: main menu, forms 
 
 Procedural and partially object-oriented programming principles have been used in this application. The following programming language tools were used: structures, functions, files, etc.
 
+
+
 Some screenshots of work:
 
 - Main menu of the application
