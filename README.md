@@ -18,4 +18,3 @@ Procedural and partially object-oriented programming principles have been used i
 
 Screenshots:
 
-![Main menu of the program: ](https://drive.google.com/file/d/19Rmi7t9-fuun2N2_rZFNepvCehdydXLw/view?usp=drive_link)
