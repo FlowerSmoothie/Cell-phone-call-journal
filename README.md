@@ -18,4 +18,4 @@ Procedural and partially object-oriented programming principles have been used i
 
 Screenshots:
 
-![Main menu of the app: ](https://github.com/FlowerSmoothie/Cell-phone-call-journal/tree/main/Images/TRPZ_00.png?raw=true)
+<img width="384" height="113" alt="Image" src="https://github.com/user-attachments/assets/5f540846-15dd-458b-9559-27e689ed2b62" />
