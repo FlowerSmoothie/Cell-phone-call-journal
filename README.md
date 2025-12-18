@@ -15,3 +15,7 @@ During the process of work, there have been developed some user functions to ena
 Algorithms of function operation have been developed, such as: main menu, forms of authorization and registration, menu of modules of user and administrator, algorithms of search and sorting.
 
 Procedural and partially object-oriented programming principles have been used in this application. The following programming language tools were used: structures, functions, files, etc.
+
+Screenshots:
+
+![Main menu of the program: ](https://drive.google.com/file/d/19Rmi7t9-fuun2N2_rZFNepvCehdydXLw/view?usp=drive_link)
