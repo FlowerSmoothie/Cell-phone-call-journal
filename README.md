@@ -14,6 +14,8 @@ During the process of work, there have been developed some user functions to ena
 
 Algorithms of function operation have been developed, such as: main menu, forms of authorization and registration, menu of modules of user and administrator, algorithms of search and sorting.
 
+The data is contained in files (_data.txt_ for users and _database.txt_ for calls).
+
 Procedural and partially object-oriented programming principles have been used in this application. The following programming language tools were used: structures, functions, files, etc.
 
 <br/>
